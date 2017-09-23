@@ -1,0 +1,26 @@
+{% extends "order/payment/details.html" %}
+{% load bootstrap_form from bootstrap3 %}
+{% load i18n %}
+
+{% block forms %}
+  <form id="payment-form-paygate" method="{{ form.method }}"{% if form.action %} action="{{ form.action }}"{% endif %} novalidate>
+      {% csrf_token %}
+      {{ form.media }}
+      {% bootstrap_form form %}
+      <p>Redirecting to Paygate...</p>
+  </form>
+
+<script
+    src="http://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    
+<script type="text/javascript">
+	$(document).ready(function(){
+	  $('#payment-form-paygate').submit();
+	  console.log('submitted');
+	});
+</script>
+{% endblock forms %}
+
+

@@ -256,13 +256,27 @@ PAYMENT_HOST = get_host
 PAYMENT_MODEL = 'order.Payment'
 
 PAYMENT_VARIANTS = {
-    'default': ('payments.dummy.DummyProvider', {})}
+    'default': ('payments.dummy.DummyProvider', {}),
+    'stripe': ('payments.stripe.StripeProvider', {
+        'secret_key': 'sk_test_EilsPnHSEEkZEnt8zvGLcE0k',
+        'public_key': 'pk_test_Th0NqwPz5OcpEmO5IQQPRJPK'}),
+    'paypal': ('payments.paypal.PaypalProvider', {
+        'client_id': 'AZbRT5q0rnPs2PwLHc4RmqXpC8apvuDpd19fpSRzqbIBFYsJtkRbxtYHO4sK7ZdkM6KJ4FiD9CNOz6oV',
+        'secret': 'EHjXXZY0YCh72YUDPeb2gTGsiGvIigiH7LzJPnKccOnZ84zEcEL5Wdz442AGflY72KfGeSo8OlqfJz6f',
+        'endpoint': 'https://api.sandbox.paypal.com',
+        'capture': True}),
+    'paygate': ('payments.paygate.PaygateProvider', {}),
+    }
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
 SESSION_ENGINE = 'django.contrib.sessions.backends.cached_db'
 
 CHECKOUT_PAYMENT_CHOICES = [
-    ('default', 'Dummy provider')]
+    ('default', 'Dummy provider'),
+    ('stripe', 'Stripe provider'),
+    ('paypal', 'PayPal'),
+    ('paygate', 'PayGate'),
+]
 
 MESSAGE_TAGS = {
     messages.ERROR: 'danger'}
@@ -284,7 +298,7 @@ BOOTSTRAP3 = {
 TEST_RUNNER = ''
 
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'localhost').split()
-
+ALLOWED_HOSTS = ['127.0.0.1','localhost']
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Amazon S3 configuration

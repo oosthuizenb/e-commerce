@@ -97,9 +97,9 @@ def start_payment(request, order, variant):
         order.change_status(OrderStatus.PAYMENT_PENDING)
         payment, dummy_created = Payment.objects.get_or_create(
             variant=variant, status=PaymentStatus.WAITING, order=order,
-            defaults=defaults)
+            defaults=defaults) # !
         try:
-            form = payment.get_form(data=request.POST or None)
+            form = payment.get_form(data=request.POST or None) # !
         except RedirectNeeded as redirect_to:
             return redirect(str(redirect_to))
         except Exception:
@@ -112,7 +112,8 @@ def start_payment(request, order, variant):
                     ' payment service'))
             payment.change_status(PaymentStatus.ERROR)
             return redirect('order:payment', token=order.token)
-    template = 'order/payment/%s.html' % variant
+    template = 'order/payment/%s.html' % variant # !
+    print('Created payment')
     return TemplateResponse(request, [template, 'order/payment/default.html'],
                             {'form': form, 'payment': payment})
 
