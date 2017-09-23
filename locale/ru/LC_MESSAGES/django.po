@@ -2,7 +2,7 @@
 # Copyright (C) 2017 Mirumee Software
 # This file is distributed under the same license as the Saleor package.
 # Mirumee Software <hello@mirumee.com>, 2017.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -12,13 +12,11 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Weronika Terpilowska <weronika@mirumee.com>, 2017\n"
 "Language-Team: Russian (https://www.transifex.com/mirumee/teams/34782/ru/)\n"
-"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
-"%100>=11 && n%100<=14)? 2 : 3);\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: saleor/cart/__init__.py:20
 msgctxt "cart status"
@@ -1391,26 +1389,22 @@ msgctxt "Email confirmation message"
 msgid ""
 "Hi!\n"
 "\n"
-"You have requested login access to saleor project. To continue visit the "
-"link below.\n"
+"You have requested login access to saleor project. To continue visit the link below.\n"
 "\n"
 "%(activate_url)s\n"
 "\n"
-"If you didn't try to login to saleor please ignore this message. We "
-"apologise for inconvenience.\n"
+"If you didn't try to login to saleor please ignore this message. We apologise for inconvenience.\n"
 "\n"
 "Sincerely,\n"
 "Saleor Team"
 msgstr ""
 "Здравствуйте!\n"
 "\n"
-"Вы запросили доступ к проекту Saleor. Для продолжения перейдите по ссылке "
-"ниже.\n"
+"Вы запросили доступ к проекту Saleor. Для продолжения перейдите по ссылке ниже.\n"
 "\n"
 "%(activate_url)s\n"
 "\n"
-"Если вы не пытались зайти в Saleor пожалуйста проигнорируйте это сообщение. "
-"Мы приносим извинения за неудобства.\n"
+"Если вы не пытались зайти в Saleor пожалуйста проигнорируйте это сообщение. Мы приносим извинения за неудобства.\n"
 "\n"
 "С уважением,\n"
 "Команда Saleor"
@@ -1425,16 +1419,12 @@ msgstr "Подтвердите свой адрес электронной поч
 msgid ""
 "Hello from %(site_name)s!\n"
 "\n"
-"You're receiving this e-mail because you or someone else has requested a "
-"password for your user account at %(domain)s.\n"
-"It can be safely ignored if you did not request a password reset. Click the "
-"link below to reset your password."
+"You're receiving this e-mail because you or someone else has requested a password for your user account at %(domain)s.\n"
+"It can be safely ignored if you did not request a password reset. Click the link below to reset your password."
 msgstr ""
 "Привет из %(site_name)s!\n"
-"Вы получили это письмо потому, что вы или кто-то другой запросили пароль к "
-"аккаунту на %(domain)s.\n"
-"Эта информация может быть проигнорирована, если вы не запрашивали "
-"восстановление пароля. Перейдите по ссылке ниже для восстановления пароля."
+"Вы получили это письмо потому, что вы или кто-то другой запросили пароль к аккаунту на %(domain)s.\n"
+"Эта информация может быть проигнорирована, если вы не запрашивали восстановление пароля. Перейдите по ссылке ниже для восстановления пароля."
 
 #: templates/account/email/password_reset_message.txt:8
 #, python-format
@@ -1495,7 +1485,8 @@ msgstr "Google"
 
 #: templates/account/password_change.html:7 templates/cart/index.html:12
 #: templates/order/details.html:16 templates/order/payment.html:19
-#: templates/product/details.html:16 templates/userprofile/address-edit.html:15
+#: templates/product/details.html:16
+#: templates/userprofile/address-edit.html:15
 #: templates/userprofile/details.html:14
 msgctxt "Main navigation item"
 msgid "Home"
@@ -1539,8 +1530,8 @@ msgid ""
 "Please let us know the email you have used to register or purchase at our "
 "store."
 msgstr ""
-"Пожалуйста сообщите нам ваш адрес электронной почты, который вы использовали "
-"для регистрации или при совершении покупки в нашем магазине."
+"Пожалуйста сообщите нам ваш адрес электронной почты, который вы использовали"
+" для регистрации или при совершении покупки в нашем магазине."
 
 #: templates/account/password_reset.html:27
 msgctxt "Password reset primary action"
@@ -1563,8 +1554,8 @@ msgid ""
 "We have sent you an e-mail. Please contact us if you do not receive it "
 "within a few minutes."
 msgstr ""
-"Мы послали вам e-mail. Пожалуйста свяжитесь с нами если вы не получите его в "
-"течении нескольких минут."
+"Мы послали вам e-mail. Пожалуйста свяжитесь с нами если вы не получите его в"
+" течении нескольких минут."
 
 #: templates/account/password_reset_from_key.html:6
 msgctxt "Password reset from key page title"
@@ -1584,8 +1575,7 @@ msgid ""
 "reset</a>."
 msgstr ""
 "Ссылка сброса пароля была неверная, возможно\n"
-"потому, что она была уже ранее использована.<br> Пожалуйста запросите <a "
-"href=\"%(passwd_reset_url)s\">новый сброс пароля</a>."
+"потому, что она была уже ранее использована.<br> Пожалуйста запросите <a href=\"%(passwd_reset_url)s\">новый сброс пароля</a>."
 
 #: templates/account/password_reset_from_key.html:23
 msgctxt "Password reset from key form title"
@@ -1619,8 +1609,7 @@ msgstr "Ваш пароль изменен"
 #: templates/account/password_reset_from_key_done.html:10
 #, python-format
 msgctxt "Password reset from key done text"
-msgid ""
-"You can now <a href=\"%(login_url)s\">sign in</a> using your new password"
+msgid "You can now <a href=\"%(login_url)s\">sign in</a> using your new password"
 msgstr ""
 "Теперь вы можете <a href=\"%(login_url)s\">войти</a>, используя ваш новый "
 "пароль"
@@ -2025,12 +2014,14 @@ msgstr "Продажи"
 #: templates/dashboard/order/address_form.html:23
 #: templates/dashboard/order/detail.html:11
 #: templates/dashboard/order/detail.html:43
-#: templates/dashboard/order/list.html:6 templates/dashboard/order/list.html:14
+#: templates/dashboard/order/list.html:6
+#: templates/dashboard/order/list.html:14
 msgctxt "Dashboard orders list"
 msgid "Orders"
 msgstr "Заказы"
 
-#: templates/dashboard/base.html:140 templates/dashboard/customer/detail.html:8
+#: templates/dashboard/base.html:140
+#: templates/dashboard/customer/detail.html:8
 #: templates/dashboard/customer/detail.html:24
 #: templates/dashboard/customer/list.html:7
 #: templates/dashboard/customer/list.html:17
@@ -2104,9 +2095,12 @@ msgid "There is one product in this category that will be deleted."
 msgid_plural ""
 "There are %(counter)s products in this category that will be deleted."
 msgstr[0] "Есть продукт в этой категории, который будет удален."
-msgstr[1] "Есть %(counter)s продуктов в этой категории, которые будут удалены."
-msgstr[2] "Есть %(counter)s продуктов в этой категории, которые будут удалены."
-msgstr[3] "Есть %(counter)s продуктов в этой категории, которые будут удалены."
+msgstr[1] ""
+"Есть %(counter)s продуктов в этой категории, которые будут удалены."
+msgstr[2] ""
+"Есть %(counter)s продуктов в этой категории, которые будут удалены."
+msgstr[3] ""
+"Есть %(counter)s продуктов в этой категории, которые будут удалены."
 
 #: templates/dashboard/category/category_confirm_delete.html:53
 #: templates/dashboard/category/modal_delete.html:45
@@ -3244,8 +3238,8 @@ msgstr ""
 #, python-format
 msgctxt "Modal delete product text"
 msgid ""
-"If you remove <strong>%(product)s</strong> you will lose all data related to "
-"this product."
+"If you remove <strong>%(product)s</strong> you will lose all data related to"
+" this product."
 msgstr ""
 "Если вы удалите <strong>%(product)s</strong> вы потеряете все данные "
 "относящиеся к этому продукту."
@@ -3568,7 +3562,8 @@ msgstr "Не найдено местоположение."
 #: templates/dashboard/product/stock_locations/modal_confirm_delete.html:11
 #, python-format
 msgctxt "Modal delete stock location text"
-msgid "You are about to delete a stock location <strong>%(location)s</strong>."
+msgid ""
+"You are about to delete a stock location <strong>%(location)s</strong>."
 msgstr "Вы собираетесь удалить склад <strong>%(location)s</strong>."
 
 #: templates/dashboard/product/stock_locations/modal_confirm_delete.html:17
@@ -4035,8 +4030,7 @@ msgid ""
 msgstr ""
 "Привет! \n"
 "\n"
-"Спасибо за оплату. Чтобы увидеть детали платежа перейдите по ссылке: "
-"%(order_url)s\n"
+"Спасибо за оплату. Чтобы увидеть детали платежа перейдите по ссылке: %(order_url)s\n"
 "\n"
 "С уважением,\n"
 "Команда Saleor"
