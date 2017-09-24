@@ -43,6 +43,7 @@
                               </li>
                             {% endif %}
                             <li>
+
                               <a href="{% url "profile:details" %}">
                                   {% trans "Your account" context "Main navigation item" %}</a>
                             </li>
@@ -109,7 +110,7 @@
                               {% endif %}
                             </span>
                           </a>
-                          <div class="cart-dropdown d-none">
+                          <div class="cart-dropdown ">
                             {% include 'cart-dropdown.html' %}
                           </div>
                         </div>
